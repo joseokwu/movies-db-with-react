@@ -5,7 +5,7 @@ const useFetch = (searchParam) => {
   const [isLoading, setIsLoading] = useState(false);
   const [movies, setMovies] = useState([]);
   const [isError, setIsError] = useState({ show: false, msg: '' });
-  const url = `http://www.omdbapi.com/?${searchParam}&apikey=7e897cb3`;
+  const url = `https://www.omdbapi.com/?${searchParam}&apikey=7e897cb3`;
   const fetchData = async (url) => {
     setIsLoading(true);
     try {
